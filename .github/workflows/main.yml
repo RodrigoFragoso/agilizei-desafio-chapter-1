@@ -45,7 +45,7 @@ jobs:
       continue-on-error: true
     
     # Gerar relatório em html
-    - run: npm run generate:mocha:html
+    - run: npm run report:mocha:html
     
     # publicar relatorio html
     - name: Deploy to Github pages
