@@ -42,6 +42,7 @@ jobs:
 
     # Executar os testes
     - run: npm run cy:run
+      continue-on-error: true
     
     # Gerar relatório em html
     - run: npm run generate:mocha:html
