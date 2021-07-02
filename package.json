@@ -1,0 +1,24 @@
+{
+  "name": "agilizei-desafio-chapter-1",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "cy:open": "npx cypress open",
+    "cy:run": "npm run report:clean && npx cypress run",
+    "report:clean": "rm -rf mochawesome-report index.json",
+    "report:merge": "mochawesome-merge > mochawesome-report/index.json",
+    "report:mocha": "marge mochawesome-report/index.json",
+    "report:mocha:html": "npm run report:merge && npm run report:mocha"
+  },
+  "devDependencies": {
+    "cypress": "^7.6.0",
+    "cypress-multi-reporters": "^1.5.0",
+    "faker-br": "^0.4.1",
+    "mocha": "^9.0.1",
+    "mochawesome": "^6.2.2",
+    "mochawesome-merge": "^4.2.0",
+    "mochawesome-report-generator": "^5.2.0"
+  }
+}

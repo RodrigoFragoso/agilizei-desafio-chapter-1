@@ -1,0 +1,21 @@
+{
+    "$schema": "https://raw.githubusercontent.com/cypress-io/cypress/develop/cli/schema/cypress.schema.json",
+    "baseUrl": "http://automationpractice.com",
+    "experimentalSourceRewriting": true,
+    "watchForFileChanges": false,
+    "pageLoadTimeout": 60000,
+    "viewportWidth": 1400,
+    "viewportHeight": 1000,
+    "failOnStatusCode": false,
+    "testFiles": "**/*.*spec.*",
+    "reporter": "mochawesome",
+    "reporterOptions": {
+        "configFile": "reporter-config.json",
+        "html": false,
+        "json": true
+    },
+    "retries": {
+        "runMode": 1,
+        "openMode": 0
+    }
+}
