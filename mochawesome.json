@@ -5,9 +5,9 @@
     "passes": 4,
     "pending": 0,
     "failures": 0,
-    "start": "2021-07-02T18:32:15.740Z",
-    "end": "2021-07-02T18:32:55.081Z",
-    "duration": 39341,
+    "start": "2021-07-02T18:36:04.803Z",
+    "end": "2021-07-02T18:37:07.711Z",
+    "duration": 62908,
     "testsRegistered": 4,
     "passPercent": 100,
     "pendingPercent": 0,
@@ -18,7 +18,7 @@
   },
   "results": [
     {
-      "uuid": "173e195f-41d5-4362-a0ba-1b3c014a4d52",
+      "uuid": "856fe678-bef7-4a17-9eac-ced2cc9c61d4",
       "title": "",
       "fullFile": "cypress/integration/Usuario/CriarUsuario.spec.js",
       "file": "cypress/integration/Usuario/CriarUsuario.spec.js",
@@ -27,7 +27,7 @@
       "tests": [],
       "suites": [
         {
-          "uuid": "c37ca9ae-59c2-4112-aa8d-379c9a0493c5",
+          "uuid": "2a79372a-ac9a-413b-ad79-2a9a4bff07f7",
           "title": "Desafio do Chapter #1",
           "fullFile": "",
           "file": "",
@@ -36,7 +36,7 @@
           "tests": [],
           "suites": [
             {
-              "uuid": "7b5e7021-ce5f-4f27-b829-e842b7a9dad5",
+              "uuid": "3c71f64d-acff-4d8f-94e5-4ac6add17e24",
               "title": "Validar a criação de novos usuários",
               "fullFile": "",
               "file": "",
@@ -47,7 +47,7 @@
                   "title": "Criando um novo usuário",
                   "fullTitle": "Desafio do Chapter #1 Validar a criação de novos usuários Criando um novo usuário",
                   "timedOut": null,
-                  "duration": 22199,
+                  "duration": 29225,
                   "state": "passed",
                   "speed": "slow",
                   "pass": true,
@@ -56,26 +56,26 @@
                   "context": null,
                   "code": "cy.url().should('contain', 'account-creation');\ncy.contains('Your personal information');\ncy.get('div#uniform-id_gender2').should('be.visible').click();\ncy.get('input#customer_firstname').type(firstName);\ncy.get('input#customer_lastname').type(lastName);\ncy.get('input#email').should('contain.value', email);\ncy.get('input#passwd').type(password);\ncy.get('select#days').select('23');\ncy.get('select#months').select('January');\ncy.get('select#years').select('1989');\ncy.get('input#newsletter').check();\ncy.contains('Your address');\ncy.get('input#firstname').should('contain.value', firstName);\ncy.get('input#lastname').should('contain.value', lastName);\ncy.get('input#company').type(company);\ncy.get('input#address1').type(address1);\ncy.get('input#address2').type(address2);\ncy.get('input#city').type(city);\ncy.get('select#id_state').select('Colorado');\ncy.get('input#postcode').type(postCode);\ncy.get('textarea#other').type('Agilizei - Desafio do Chapter #1');\ncy.get('input#phone').type(phone);\ncy.get('input#phone_mobile').type(phone);\ncy.get('input#alias').clear().type(alias);\ncy.get('button#submitAccount').click();\ncy.url().should('contain', 'controller=my-account');\ncy.contains('Welcome to your account.');",
                   "err": {},
-                  "uuid": "1bc65f10-bbdc-499d-9335-3ad3b389184b",
-                  "parentUUID": "7b5e7021-ce5f-4f27-b829-e842b7a9dad5",
+                  "uuid": "cf86bafe-1b62-4e03-85ef-0ef9964582fc",
+                  "parentUUID": "3c71f64d-acff-4d8f-94e5-4ac6add17e24",
                   "isHook": false,
                   "skipped": false
                 }
               ],
               "suites": [],
               "passes": [
-                "1bc65f10-bbdc-499d-9335-3ad3b389184b"
+                "cf86bafe-1b62-4e03-85ef-0ef9964582fc"
               ],
               "failures": [],
               "pending": [],
               "skipped": [],
-              "duration": 22199,
+              "duration": 29225,
               "root": false,
               "rootEmpty": false,
               "_timeout": 2000
             },
             {
-              "uuid": "11f6a9de-4500-4597-9f89-64d9fba34217",
+              "uuid": "787f6f5a-9701-4363-8f04-1c158ce7de9c",
               "title": "Caminhos infelizes",
               "fullFile": "",
               "file": "",
@@ -86,7 +86,7 @@
                   "title": "Tentar criar um usuário com e-mail já cadastrado",
                   "fullTitle": "Desafio do Chapter #1 Caminhos infelizes Tentar criar um usuário com e-mail já cadastrado",
                   "timedOut": null,
-                  "duration": 6148,
+                  "duration": 11761,
                   "state": "passed",
                   "speed": "slow",
                   "pass": true,
@@ -95,8 +95,8 @@
                   "context": null,
                   "code": "cy.get('input#email_create').type('teste@teste.com');\ncy.get('button#SubmitCreate').click();\ncy.get('div#create_account_error').should('contain.text', 'email address has already been registered');",
                   "err": {},
-                  "uuid": "57e0f664-5893-4f26-959d-16ea54ecb870",
-                  "parentUUID": "11f6a9de-4500-4597-9f89-64d9fba34217",
+                  "uuid": "8b5e9bdb-8282-408e-b2ff-5f394d97f891",
+                  "parentUUID": "787f6f5a-9701-4363-8f04-1c158ce7de9c",
                   "isHook": false,
                   "skipped": false
                 },
@@ -104,7 +104,7 @@
                   "title": "Tentar criar um usuário sem informar o e-mail",
                   "fullTitle": "Desafio do Chapter #1 Caminhos infelizes Tentar criar um usuário sem informar o e-mail",
                   "timedOut": null,
-                  "duration": 4573,
+                  "duration": 8516,
                   "state": "passed",
                   "speed": "slow",
                   "pass": true,
@@ -113,8 +113,8 @@
                   "context": null,
                   "code": "cy.get('input#email_create').type(' ');\ncy.get('button#SubmitCreate').click();\ncy.get('div#create_account_error').should('contain.text', 'Invalid email address.');",
                   "err": {},
-                  "uuid": "9293f613-1ab1-4772-9600-16ccd34b2d32",
-                  "parentUUID": "11f6a9de-4500-4597-9f89-64d9fba34217",
+                  "uuid": "c06cb6f2-8e1a-4e42-96d7-affdb38bc9fb",
+                  "parentUUID": "787f6f5a-9701-4363-8f04-1c158ce7de9c",
                   "isHook": false,
                   "skipped": false
                 },
@@ -122,7 +122,7 @@
                   "title": "Tentar criar um usuário com o e-mail invalido",
                   "fullTitle": "Desafio do Chapter #1 Caminhos infelizes Tentar criar um usuário com o e-mail invalido",
                   "timedOut": null,
-                  "duration": 6219,
+                  "duration": 13245,
                   "state": "passed",
                   "speed": "slow",
                   "pass": true,
@@ -131,22 +131,22 @@
                   "context": null,
                   "code": "cy.get('input#email_create').type('emailInvalido');\ncy.get('button#SubmitCreate').click();\ncy.get('div#create_account_error').should('contain.text', 'Invalid email address.');",
                   "err": {},
-                  "uuid": "0da1df09-886e-4824-8bf9-e4cce0eb2eaf",
-                  "parentUUID": "11f6a9de-4500-4597-9f89-64d9fba34217",
+                  "uuid": "b808077e-ae12-43ae-9753-84facefa88b8",
+                  "parentUUID": "787f6f5a-9701-4363-8f04-1c158ce7de9c",
                   "isHook": false,
                   "skipped": false
                 }
               ],
               "suites": [],
               "passes": [
-                "57e0f664-5893-4f26-959d-16ea54ecb870",
-                "9293f613-1ab1-4772-9600-16ccd34b2d32",
-                "0da1df09-886e-4824-8bf9-e4cce0eb2eaf"
+                "8b5e9bdb-8282-408e-b2ff-5f394d97f891",
+                "c06cb6f2-8e1a-4e42-96d7-affdb38bc9fb",
+                "b808077e-ae12-43ae-9753-84facefa88b8"
               ],
               "failures": [],
               "pending": [],
               "skipped": [],
-              "duration": 16940,
+              "duration": 33522,
               "root": false,
               "rootEmpty": false,
               "_timeout": 2000
